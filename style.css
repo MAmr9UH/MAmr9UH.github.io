@@ -94,3 +94,13 @@ body.dark .fig{background:#0f182b;border-color:#24324e}
 .vid .video{aspect-ratio:16/9;margin-bottom:16px;border-radius:6px}
 .vid h3{font-size:18px;margin:0 0 4px}
 .vid .by{font-size:15px}
+
+/* Smooth theme change between pages */
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.9s;animation-timing-function:ease-in-out}
+/* Entering AI in Two Minutes: page fades from white into dark navy */
+@keyframes toDark{from{background-color:#ffffff}to{background-color:#15203a}}
+@keyframes inkIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+body.dark{animation:toDark 1.1s ease-in-out both}
+body.dark .page{animation:inkIn 1.1s ease-out .15s both}
+@media (prefers-reduced-motion:reduce){body.dark,body.dark .page{animation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}
