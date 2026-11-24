@@ -77,3 +77,20 @@ footer strong{color:var(--ink);font-weight:600}
 /* active tab: clear blue */
 .tabs a.on{color:#1d4ed8;border-color:#1d4ed8;border-bottom-width:2px;font-weight:600}
 .tabs a:hover{color:#1d4ed8}
+
+/* AI in Two Minutes: dark navy theme */
+body.dark{background:#15203a;color:#c7d0dd;--navy:#ffffff;--ink:#c7d0dd;--muted:#93a1b5;--line:#2a3958}
+body.dark a{color:#e6ecf5}
+body.dark .side li a{color:#dfe6f0}
+body.dark .side svg{fill:#93a1b5}
+body.dark .tabs a.on{color:#ffffff;border-color:#5fb3d9}
+body.dark .tabs a:hover{color:#ffffff}
+body.dark .portrait{border-radius:2px}
+body.dark .video{background:#0f182b;border-color:#0f182b}
+body.dark .soon{color:#5d6f8c}
+body.dark footer strong{color:#fff}
+body.dark .fig{background:#0f182b;border-color:#24324e}
+.vid{margin-bottom:64px}
+.vid .video{aspect-ratio:16/9;margin-bottom:16px;border-radius:6px}
+.vid h3{font-size:18px;margin:0 0 4px}
+.vid .by{font-size:15px}
