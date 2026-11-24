@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Amr Mohamed</title>
+<meta name="description" content="Amr Mohamed — Computer Science, University of Houston. Optimization, AI for optimization, and energy systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main">
+
+<header>
+  <div class="head">
+    <div>
+      <h1>Amr Mohamed</h1>
+      <p class="loc">Houston, TX</p>
+    </div>
+    <img class="portrait" src="images/profile.svg" alt="Portrait of Amr Mohamed"> <!-- replace with images/profile.jpg -->
+  </div>
+  <ul class="links">
+    <li><a href="mailto:mohamedwamr81@yahoo.com">Email</a></li>
+    <li><a href="https://github.com/MAmr9UH">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/Mohamed-Amr-UH">LinkedIn</a></li>
+    <li><a href="#">Google Scholar</a></li>
+    <li><a href="cv.pdf">CV</a></li>
+  </ul>
+  <ul class="nav">
+    <li><a href="index.html#publications">Research</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="teaching.html">AI in 2 Minutes</a></li>
+    <li><a href="quotes.html">Quotes</a></li>
+  </ul>
+</header>
+
+<section class="bio">
+  <p>I am a senior studying Computer Science at the University of Houston (GPA 3.73), graduating in December 2026. I work at the intersection of mathematical optimization and machine learning. I build optimization models for energy systems, and I study how to make large language models reliable when they formulate optimization problems.</p>
+  <p>I have done research with Prof. Lei Fan, Prof. Christoph Eick, and Prof. Nikolaos Tsekos. I am applying to PhD programs for Fall 2027.</p>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+
+  <article class="entry">
+    <h3><a href="#">Right Answer, Wrong Model: Verifying LLM-Generated Optimization Models</a></h3>
+    <p class="by"><u>Amr Mohamed</u> · Under review at ICLR 2027</p>
+    <p><strong>TL;DR:</strong> LLMs can write optimization models that report the correct objective value but have wrong constraints. 14.9% of models from 7 LLMs had these silent errors. SilentOR catches them with executable checks and solver-backed witnesses, raising detection precision from 66.4% to 96.2%.</p>
+    <div class="more"><a href="#">Read the paper</a><a href="#">Code</a></div>
+    <div class="fig"><img src="images/papers/silentor.svg" alt="SilentOR main figure"></div>
+  </article>
+
+  <article class="entry">
+    <h3><a href="#">Efficiency-Aware Optimization of Wind-Powered Electrolyzer Operation with Multiple Operating States</a></h3>
+    <p class="by"><u>Amr Mohamed</u>, J. Huang, L. Fan · North American Power Symposium (NAPS), 2026</p>
+    <p><strong>TL;DR:</strong> A full-year hourly MILP for wind-to-hydrogen production. Adding a standby state beside on/off operation raises annual profit by 4.2% and solves faster.</p>
+    <div class="more"><a href="#">Read the paper</a></div>
+    <div class="fig"><img src="images/papers/naps.svg" alt="Wind electrolyzer main figure"></div>
+  </article>
+</section>
+
+<section id="projects">
+  <h2>Research projects</h2>
+
+  <article class="entry">
+    <h3>Interior-Point Methods for Power Grid Optimization</h3>
+    <p class="by">With Prof. Nikolaos Tsekos · Fall 2026 – present</p>
+    <p>A primal-dual interior-point method for DC-OPF on IEEE 30/118-bus grids with Google data-center loads, comparing Cholesky, CG, and Jacobi-PCG solvers and validating against Gurobi.</p>
+    <div class="more"><a href="#">GitHub</a></div>
+    <div class="fig"><img src="images/projects/ipm.svg" alt=""></div>
+  </article>
+
+  <article class="entry">
+    <h3>Oyster-Reef Segmentation with SAM 2</h3>
+    <p class="by">With Prof. Christoph Eick · Fall 2025</p>
+    <p>LoRA-fine-tuned SAM 2, prompted with DINOv2-derived masks, segments oyster reefs in drone imagery at 0.73 IoU.</p>
+    <div class="more"><a href="#">GitHub</a></div>
+    <div class="fig"><img src="images/projects/sam2.svg" alt=""></div>
+  </article>
+
+  <article class="entry">
+    <h3>QUBO Optimization for Nuclear Reactor Fuel Loading</h3>
+    <p class="by">NSF RET, with Prof. Lei Fan · Summer 2025</p>
+    <p>A 37-cell core-loading problem formulated as a QUBO and solved with simulated annealing, reaching zero same-type adjacencies. I turned it into a high-school lesson on matrices.</p>
+    <div class="more"><a href="#">GitHub</a></div>
+    <div class="fig"><img src="images/projects/qubo.svg" alt=""></div>
+  </article>
+
+  <h2>Other projects</h2>
+
+  <article class="entry">
+    <h3>NVIDIA Nemotron Model Reasoning Challenge</h3>
+    <p class="by">Kaggle · 2026 · Silver Medal</p>
+    <p>Adapted replay-data training to mathematical reasoning with LoRA fine-tuning, improving the score by 0.3+.</p>
+    <div class="more"><a href="#">GitHub</a><a href="#">Kaggle</a></div>
+    <div class="fig"><img src="images/projects/nemotron.svg" alt=""></div>
+  </article>
+
+  <article class="entry">
+    <h3>DINOv2 Biomass Prediction</h3>
+    <p class="by">Kaggle · 2026</p>
+    <p>DINOv2-Large regression with FiLM conditioning, reaching 0.629 out-of-fold weighted R² across five biomass targets.</p>
+    <div class="more"><a href="#">GitHub</a><a href="#">Kaggle</a></div>
+    <div class="fig"><img src="images/projects/biomass.svg" alt=""></div>
+  </article>
+</section>
+
+<section>
+  <h2>Honors</h2>
+  <ul class="plain">
+    <li>UH Energy Scholar ($6,000) · teachHOUSTON Google Scholarship ($4,500)</li>
+    <li>Undergraduate Research Travel Fellowship · Greater Texas Foundation Scholarship</li>
+    <li>Kaggle Expert · Dean's List (Spring 2025, Spring 2026) · 3rd of 60, Cloudathon@UH 2025</li>
+    <li>AWS Certified ML – Specialty · AWS Solutions Architect – Associate</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:mohamedwamr81@yahoo.com">mohamedwamr81@yahoo.com</a><br>
+  Department of Computer Science, University of Houston</p>
+</section>
+
+<footer>© 2026 Amr Mohamed</footer>
+</main>
+</body>
+</html>
