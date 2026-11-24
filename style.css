@@ -69,3 +69,6 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:v
   .entry{grid-template-columns:1fr;gap:18px}
   .lead{font-size:22px}
 }
+footer{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+footer strong{color:var(--ink);font-weight:600}
+.entry .fig{aspect-ratio:16/9}
