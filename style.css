@@ -19,7 +19,7 @@ img,video{max-width:100%;display:block}
 .side li a,.side li span{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
 .side li a:hover{color:var(--navy);text-decoration:underline}
 .side li span{color:var(--muted)}
-.side svg{width:15px;height:15px;flex:none;fill:var(--muted)}
+.side svg{width:15px!important;height:15px!important;max-width:15px;flex:none;fill:var(--muted)}
 
 /* tabs */
 .tabs{display:flex;gap:30px;border-bottom:1px solid var(--line);margin:0 0 44px;flex-wrap:wrap}
