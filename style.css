@@ -12,8 +12,8 @@ img,video{max-width:100%;display:block}
 .side h1{font-size:32px;white-space:nowrap;line-height:1.15;font-weight:600;color:var(--navy);margin:0;letter-spacing:-.02em}
 .side h1 a{text-decoration:none;color:inherit}
 .side .sub{color:var(--muted);font-size:13px;margin:6px 0 18px}
-.portrait{width:182px;height:228px;object-fit:cover;border-radius:2px;filter:grayscale(100%);transition:filter .5s ease}
-.portrait:hover{filter:grayscale(0%)}
+.portrait{width:182px;height:228px;object-fit:cover;border-radius:2px;filter:grayscale(0%);transition:filter .5s ease}
+@media (hover:hover){.portrait:hover{filter:grayscale(100%)}}
 .side ul{list-style:none;padding:0;margin:22px 0 0}
 .side li{margin:0 0 9px;font-size:14px}
 .side li a,.side li span{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
