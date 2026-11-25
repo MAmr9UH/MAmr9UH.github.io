@@ -26,31 +26,17 @@
   </ul>
 </aside>
 <main>
-  <nav class="tabs"><a href="index.html" class="on">Research</a><a href="blog.html">Blog</a><a href="teaching.html">AI in Two Minutes</a><a href="quotes.html">Quotes</a></nav>
+  <nav class="tabs" aria-label="Main navigation">
+    <a href="index.html" class="on" aria-current="page">Highlights</a>
+    <a href="publications.html">Publication</a>
+    <a href="blog.html">Blog</a>
+    <a href="teaching.html">AI in Two Minutes</a>
+    <a href="quotes.html">Quotes</a>
+  </nav>
   <section class="intro">
     <p class="lead">I am a Computer Science student at the University of Houston working on mathematical optimization and on how AI can formulate and solve optimization problems reliably.</p>
     <p>I build optimization models for energy systems with Prof. Lei Fan and Prof. Nikolaos Tsekos, and I have worked on vision foundation models with Prof. Christoph Eick. I graduate in December 2026 and am applying to PhD programs for Fall 2027.</p>
   </section>
-
-  <h2>Latest publications</h2>
-  <article class="entry">
-    <div>
-      <h3><a href="papers/silentor.pdf">Right Answer, Wrong Model: Verifying LLM-Generated Optimization Models</a></h3>
-      <p class="by"><u>Mohamed, A.</u> <em>Under review at ICLR 2027</em></p>
-      <p><strong>TL;DR:</strong> LLMs can write optimization models that report the correct objective value but have wrong constraints. Across 40 problems and 7 LLMs, 14.9% of generated models had these silent errors. I built SilentOR, which uses executable checks and solver-backed witnesses to catch them, raising detection precision from 66.4% to 96.2%.</p>
-      <div class="more"><a href="papers/silentor.pdf">Read the paper</a><a href="#">Code</a></div>
-    </div>
-    <div class="fig"><img src="images/papers/silentor.gif" onerror="this.onerror=null;this.src='images/papers/silentor.svg'" alt=""></div>
-  </article>
-  <article class="entry">
-    <div>
-      <h3><a href="papers/naps.pdf">Efficiency-Aware Optimization of Wind-Powered Electrolyzer Operation with Multiple Operating States</a></h3>
-      <p class="by"><u>Mohamed, A.</u>, Huang, J., Fan, L. <em>NAPS 2026</em></p>
-      <p><strong>TL;DR:</strong> A full-year hourly MILP for producing hydrogen from wind power, with piecewise-linear efficiency. Adding a standby state beside on/off operation raises annual profit by 4.2% and solves faster.</p>
-      <div class="more"><a href="papers/naps.pdf">Read the paper</a></div>
-    </div>
-    <div class="fig"><img src="images/papers/naps.gif" onerror="this.onerror=null;this.src='images/papers/naps.svg'" alt=""></div>
-  </article>
 
   <h2>Research projects</h2>
   <article class="entry">
