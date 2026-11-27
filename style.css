@@ -12,8 +12,12 @@ img,video{max-width:100%;display:block}
 .side h1{font-size:32px;white-space:nowrap;line-height:1.15;font-weight:600;color:var(--navy);margin:0;letter-spacing:-.02em}
 .side h1 a{text-decoration:none;color:inherit}
 .side .sub{color:var(--muted);font-size:13px;margin:6px 0 18px}
-.portrait{width:182px;height:auto;border-radius:2px;filter:grayscale(0%);transition:filter .5s ease}
-@media (hover:hover){.portrait:hover{filter:grayscale(100%)}}
+.portrait{position:relative;width:182px;max-width:100%;align-self:start;border-radius:2px;overflow:hidden}
+.portrait img{width:100%;height:auto}
+.portrait .hover-art{position:absolute;inset:0;height:100%;object-fit:contain;background:var(--page-bg);opacity:0;pointer-events:none;transition:opacity .25s ease}
+body.dark .hover-art{background:#15203a}
+@media (hover:hover){.portrait:hover .hover-art{opacity:1}}
+@media (prefers-reduced-motion:reduce){.portrait .hover-art{transition:none}}
 .side ul{list-style:none;padding:0;margin:22px 0 0}
 .side li{margin:0 0 9px;font-size:14px}
 .side li a,.side li span{display:flex;align-items:center;gap:10px;color:var(--link);text-decoration:none}
