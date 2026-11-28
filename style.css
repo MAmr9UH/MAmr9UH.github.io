@@ -1,5 +1,5 @@
-/* Amr Mohamed — sidebar layout, navy on warm beige */
-:root{--page-bg:#f2efe7;--navy:#1a365d;--link:#345678;--ink:#2c3644;--muted:#5c6778;--line:#e5e8ec}
+/* Amr Mohamed — sidebar layout, navy on white */
+:root{--page-bg:#ffffff;--navy:#1a365d;--link:#345678;--ink:#2c3644;--muted:#5c6778;--line:#e5e8ec}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--page-bg);color:var(--ink);font:400 16px/1.6 Geist,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
